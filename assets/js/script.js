@@ -968,3 +968,31 @@
 	
 
 })(window.jQuery);
+
+
+
+
+// Function to open the video modal
+function openVideo() {
+    var modal = document.getElementById("videoModal");
+    modal.style.display = "flex"; // Show the modal
+    var videoPlayer = document.getElementById("videoPlayer");
+    videoPlayer.play(); // Start playing the video
+}
+
+// Function to close the video modal
+function closeVideo() {
+    var modal = document.getElementById("videoModal");
+    modal.style.display = "none"; // Hide the modal
+    var videoPlayer = document.getElementById("videoPlayer");
+    videoPlayer.pause(); // Pause the video
+    videoPlayer.currentTime = 0; // Reset video to start
+}
+
+// Close the video modal if clicked outside the modal
+window.onclick = function(event) {
+    var modal = document.getElementById("videoModal");
+    if (event.target == modal) {
+        closeVideo();
+    }
+}

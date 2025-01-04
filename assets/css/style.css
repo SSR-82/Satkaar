@@ -1438,7 +1438,7 @@ div#mCSB_1_container{
   float: right;
 }
 .about__right__img__two:after {
-  content: "Since 2022";
+  content: " ";
   font-family: var(--higer-secondary-font);
   font-style: normal;
   font-weight: 700;
@@ -1839,6 +1839,79 @@ section.video__section{
             box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
   }
 }
+
+
+/*new video part*/
+
+    /* Styles for the Video Modal */
+.video-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Transparent background */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.video-modal-content {
+    position: relative;
+    background-color: #fff;
+    max-width: 80%; /* Limit the video size to 80% of the screen width */
+    max-height: 80%; /* Limit the video size to 80% of the screen height */
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+/* Video styling: Ensure it scales with the container */
+video {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure video doesn't overflow */
+    max-height: 100%; /* Ensure video doesn't overflow */
+}
+
+/* Make the modal content centered */
+.video-modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive Design: Ensure proper scaling on smaller screens */
+@media (max-width: 768px) {
+    .video-modal-content {
+        max-width: 90%; /* Reduce video size to 90% on smaller screens */
+        max-height: 90%; /* Reduce video size to 90% on smaller screens */
+    }
+
+    .close-btn {
+        font-size: 25px; /* Make the close button smaller on mobile */
+    }
+}
+
+
+
 
 /* accordion */
 
