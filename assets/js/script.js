@@ -996,3 +996,19 @@ window.onclick = function(event) {
         closeVideo();
     }
 }
+
+
+// new chef section//
+document.addEventListener('click', function(event) {
+    const chefInfo = document.getElementById('chef-info');
+    const chefCard = document.querySelector('.chef-card');
+    
+    // Toggle visibility when clicking on the chef card
+    if (chefCard.contains(event.target)) {
+        chefInfo.classList.toggle('visible');
+    } else {
+        // Close the chef info when clicking outside of it
+        chefInfo.classList.remove('visible');
+    }
+});
+
