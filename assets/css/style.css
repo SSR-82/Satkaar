@@ -6232,13 +6232,13 @@ input.property-amount{
 }
 
         /* Chef Section Styles */
-        /* Chef Section Styles */
+        
 .chef-section {
   text-align: center;
   margin: 50px 0;
   animation: fadeIn 2s ease-in-out;
   position: relative;
-  overflow: hidden;
+  overflow: scroll;
   background-color: #000; /* Black background */
   color: #fff; /* White text */
   padding: 20px;
@@ -6312,7 +6312,7 @@ input.property-amount{
 .chef-info.visible {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
-  z-index: 2;
+  z-index: 10;/* Ensure it appears on top */
 }
 
 .chef-info h2 {
