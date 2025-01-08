@@ -6367,12 +6367,13 @@ blockquote {
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 600px) and (max-height: 800px) {
   .chef-name {
       font-size: 24px; /* Smaller font size for mobile */
   }
 
   .chef-info {
       font-size: 16px; /* Adjust text size for readability */
+      position: relative;
   }
 }
