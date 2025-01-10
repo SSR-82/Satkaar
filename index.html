@@ -365,7 +365,34 @@
                         </div>
                       </div>
                       <div class="food___text">
-                        <h6>Skilled Chefs</h6>
+                        <h6>
+
+                      <!-- Hyperlink to Open Modal -->
+<a href="javascript:void(0);" onclick="openModal()">Skilled Chefs</a></h6>
+
+<section><!-- Modal Structure -->
+<div id="chefModal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>    
+          <!-- Chef Section -->
+          <section class="chef-section">
+            <div class="chef-card" onclick="toggleChefInfo()">
+                <img src="assets/images/IMAGES/Chef.jpeg" alt="Chef Name" class="chef-image">
+                <h3 class="chef-name">Chef Rajiv Kumar</h3>
+            </div>
+            <div id="chef-info" class="chef-info">
+                <h2>About Chef Name</h2>
+                <ul>
+                    <li>Culinary expert with over 24 years of experience.</li>
+                    <li>Worked in prestigious restaurants worldwide.</li>
+                    <li>Mastered various cuisines.</li>
+                    <li><span>Specialties:</span> Grilling, Indian, Shooshee, and Fusion Cuisine.</li>
+                    <li>Believes in using fresh, locally sourced ingredients.</li>
+                </ul>
+                <blockquote>"Cooking is an art, and I create masterpieces on every plate!"</blockquote>
+            </div>
+        </section> </div></section> 
+
                         <p>Our team of skilled chefs brings passion and artistry
                           to every dish they prepare. With years of experience
                           and a flair for creativity, they masterfully combine
@@ -1288,25 +1315,7 @@
           <title>Chef Presentation</title>
           <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
          
-              
-          <!-- Chef Section -->
-          <section class="chef-section">
-            <div class="chef-card" onclick="toggleChefInfo()">
-                <img src="assets/images/IMAGES/Chef.jpeg" alt="Chef Name" class="chef-image">
-                <h3 class="chef-name">Chef Rajiv Kumar</h3>
-            </div>
-            <div id="chef-info" class="chef-info">
-                <h2>About Chef Name</h2>
-                <ul>
-                    <li>Culinary expert with over 24 years of experience.</li>
-                    <li>Worked in prestigious restaurants worldwide.</li>
-                    <li>Mastered various cuisines.</li>
-                    <li><span>Specialties:</span> Grilling, Indian, Shooshee, and Fusion Cuisine.</li>
-                    <li>Believes in using fresh, locally sourced ingredients.</li>
-                </ul>
-                <blockquote>"Cooking is an art, and I create masterpieces on every plate!"</blockquote>
-            </div>
-        </section>
+          
       
 
 
