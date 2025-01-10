@@ -6273,7 +6273,7 @@ input.property-amount{
         
 .chef-section {
   text-align: center;
-  margin: 0px 50px 0px 50px;
+  margin: 0px 0px 0px 0px;
   animation: fadeIn 2s ease-in-out;
   position: relative;
   overflow: show;
@@ -6413,5 +6413,13 @@ blockquote {
   .chef-info {
       font-size: 16px; /* Adjust text size for readability */
       position: relative;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .chef-section {
+    margin: 0px 20px; /* Reduce margins for smaller screens */
+    padding: 15px; /* Adjust padding for better fit */
   }
 }
