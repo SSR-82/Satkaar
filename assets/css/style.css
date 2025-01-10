@@ -6272,8 +6272,8 @@ input.property-amount{
         /* Chef Section Styles */
         
 .chef-section {
-  text-align: relative;
-  margin: 0px 0px 0px 0px;
+  text-align: center;
+  margin: 50px 0px 0px 0px;
   animation: fadeIn 2s ease-in-out;
   position: relative;
   overflow: show;
@@ -6419,7 +6419,7 @@ blockquote {
 /* Media query for mobile devices */
 @media (max-width: 600px) {
   .chef-section {
-    margin: auto; /* Reduce margins for smaller screens */
+    margin: 50px auto; /* Reduce margins for smaller screens */
     padding: 10px; /* Adjust padding for better fit */
   }
 }
