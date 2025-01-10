@@ -6419,7 +6419,7 @@ blockquote {
 /* Media query for mobile devices */
 @media (max-width: 600px) {
   .chef-section {
-    margin: 0px 20px; /* Reduce margins for smaller screens */
-    padding: 15px; /* Adjust padding for better fit */
+    margin: 0px 0px 2px 0; /* Reduce margins for smaller screens */
+    padding: 2px; /* Adjust padding for better fit */
   }
 }
