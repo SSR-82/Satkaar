@@ -6273,7 +6273,7 @@ input.property-amount{
         
 .chef-section {
   text-align: center;
-  margin: 50px 0px;
+  margin: 0px 50px;
   animation: fadeIn 2s ease-in-out;
   position: relative;
   overflow: show;
