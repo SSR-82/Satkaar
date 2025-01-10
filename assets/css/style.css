@@ -6405,21 +6405,21 @@ blockquote {
 }
 
 /* Responsive Design */
-@media (max-width: 600px) and (max-height: 800px) {
+@media (max-width: 600px) and (max-height: 400px) {
   .chef-name {
       font-size: 24px; /* Smaller font size for mobile */
   }
 
   .chef-info {
       font-size: 16px; /* Adjust text size for readability */
-      position: relative;
+      position: center;
   }
 }
 
 /* Media query for mobile devices */
 @media (max-width: 600px) {
   .chef-section {
-    margin: 0px 0px 2px 0; /* Reduce margins for smaller screens */
+    margin: auto; /* Reduce margins for smaller screens */
     padding: 2px; /* Adjust padding for better fit */
   }
 }
