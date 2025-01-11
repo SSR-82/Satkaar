@@ -6412,14 +6412,14 @@ blockquote {
 
   .chef-info {
       font-size: 16px; /* Adjust text size for readability */
-      position: relative;
+      position: static;
   }
 }
 
 /* Media query for mobile devices */
 @media (max-width: 600px) {
   .chef-section {
-    margin: 50px auto; /* Reduce margins for smaller screens */
-    padding: 10px; /* Adjust padding for better fit */
+    margin: 10px auto; /* Reduce margins for smaller screens */
+    padding: 0px; /* Adjust padding for better fit */
   }
 }
