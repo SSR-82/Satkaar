@@ -1032,3 +1032,21 @@ document.addEventListener('click', function(event) {
     }
   }
 
+// order button//
+document.addEventListener('DOMContentLoaded', function() {
+    const permanentBtn = document.querySelector('.permanent-btn');
+    const floatingBtn = document.querySelector('.floating-btn');
+
+    window.addEventListener('scroll', function() {
+      const rect = permanentBtn.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+
+      if (!isVisible) {
+        floatingBtn.style.display = 'block';
+      } else {
+        floatingBtn.style.display = 'none';
+      }
+    });
+  });
+
+  
